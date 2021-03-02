@@ -21,9 +21,9 @@ function checkISB() {
   //encounterID!=0 AND target.id in (12118,11982,12259,12057,12056,12264,12098,11988,11502,10184,12435,13020,12017,11983,14601,11981,14020,11583,14507,14517,14510,11382,15082,14509,15114,14515,11380,14834,15348,15341,15340,15370,15369,15339,15263,15543,15511,15544,15516,15510,15299,15509,15276,15517,15589,15727,15956,15953,15952,15954,15936,16011,16061,16060,16064,16065,16062,16063,16028,15931,15932,15928,15989,15990)
   var filter = "&filter=encounterID%21%3D0%20AND%20target.id%20in%20%2812118%2C11982%2C12259%2C12057%2C12056%2C12264%2C12098%2C11988%2C11502%2C10184%2C12435%2C13020%2C12017%2C11983%2C14601%2C11981%2C14020%2C11583%2C14507%2C14517%2C14510%2C11382%2C15082%2C14509%2C15114%2C14515%2C11380%2C14834%2C15348%2C15341%2C15340%2C15370%2C15369%2C15339%2C15263%2C15543%2C15511%2C15544%2C15516%2C15510%2C15299%2C15509%2C15276%2C15517%2C15589%2C15727%2C15956%2C15953%2C15952%2C15954%2C15936%2C16011%2C16061%2C16060%2C16064%2C16065%2C16062%2C16063%2C16028%2C15931%2C15932%2C15928%2C15989%2C15990%29";
   //encounterID!=0 AND ability.name in ("Shadow Bolt","Shoot","Mind Blast","Death Coil","Shadowburn") AND target.id in (12118,11982,12259,12057,12056,12264,12098,11988,11502,10184,12435,13020,12017,11983,14601,11981,14020,11583,14507,14517,14510,11382,15082,14509,15114,14515,11380,14834,15348,15341,15340,15370,15369,15339,15263,15543,15511,15544,15516,15510,15299,15509,15276,15517,15589,15727,15956,15953,15952,15954,15936,16011,16061,16060,16064,16065,16062,16063,16028,15931,15932,15928,15989,15990)
-  var filtertwo = "&filter=encounterID%21%3D0%20AND%20ability.name%20in%20%28%22Shadow%20Bolt%22%2C%22Shoot%22%2C%22Mind%20Blast%22%2C%22Death%20Coil%22%2C%22Shadowburn%22%29%20AND%20target.id%20in%20%2812118%2C11982%2C12259%2C12057%2C12056%2C12264%2C12098%2C11988%2C11502%2C10184%2C12435%2C13020%2C12017%2C11983%2C14601%2C11981%2C14020%2C11583%2C14507%2C14517%2C14510%2C11382%2C15082%2C14509%2C15114%2C14515%2C11380%2C14834%2C15348%2C15341%2C15340%2C15370%2C15369%2C15339%2C15263%2C15543%2C15511%2C15544%2C15516%2C15510%2C15299%2C15509%2C15276%2C15517%2C15589%2C15727%2C15956%2C15953%2C15952%2C15954%2C15936%2C16011%2C16061%2C16060%2C16064%2C16065%2C16062%2C16063%2C16028%2C15931%2C15932%2C15928%2C15989%2C15990%29";
+  var filtertwo = "&filter=encounterID%21%3D0%20AND%20ability.name%20in%20%28%22Shadow%20Bolt%22%2C%22Shoot%22%2C%22Mind%20Blast%22%2C%22Death%20Coil%22%2C%22Shadowburn%22%2C%22Fireball%22%2C%22Ignite%22%2C%22Scorch%22%2C%22Instant%20Poison%22%2C%22Fire%20Blast%22%2C%22Arcane%20Shot%22%2C%22Thunderfury%22%2C%22Blast%20Wave%22%2C%22Exorcism%22%2C%22Arcane%20Explosion%22%2C%22Flamestrike%22%2C%22Judgement%20of%20Command%22%2C%22Goblin%20Sapper%20Charge%22%2C%22Mind%20Blast%22%2C%22Searing%20Pain%22%2C%22Curse%20of%20Doom%22%2C%22Smite%22%2C%22Corruption%22%2C%22Hammer%20of%20Wrath%22%2C%22Pyroblast%22%2C%22Consecration%22%2C%22Frostbolt%22%2C%22Immolate%22%2C%22Soul%20Fire%22%2C%22Flamestrike%22%2C%22Stratholme%20Holy%20Water%22%2C%22Cone%20of%20Cold%22%2C%22Moonfire%22%2C%22Holy%20Fire%22%2C%22Holy%20Wrath%22%2C%22Arcane%20Shot%22%2C%22Holy%20Shock%22%2C%22Curse%20of%20Agony%22%2C%22Rain%20of%20Fire%22%2C%22Drain%20Soul%22%2C%22Frost%20Nova%22%29%20AND%20target.id%20in%20%2812118%2C11982%2C12259%2C12057%2C12056%2C12264%2C12098%2C11988%2C11502%2C10184%2C12435%2C13020%2C12017%2C11983%2C14601%2C11981%2C14020%2C11583%2C14507%2C14517%2C14510%2C11382%2C15082%2C14509%2C15114%2C14515%2C11380%2C14834%2C15348%2C15341%2C15340%2C15370%2C15369%2C15339%2C15263%2C15543%2C15511%2C15544%2C15516%2C15510%2C15299%2C15509%2C15276%2C15517%2C15589%2C15727%2C15956%2C15953%2C15952%2C15954%2C15936%2C16011%2C16061%2C16060%2C16064%2C16065%2C16062%2C16063%2C16028%2C15931%2C15932%2C15928%2C15989%2C15990%29";
   //encounterID!=0 AND ability.name in ("Shadow Bolt","Mind Blast","Death Coil","Shadowburn") AND target.id in (12118,11982,12259,12057,12056,12264,12098,11988,11502,10184,12435,13020,12017,11983,14601,11981,14020,11583,14507,14517,14510,11382,15082,14509,15114,14515,11380,14834,15348,15341,15340,15370,15369,15339,15263,15543,15511,15544,15516,15510,15299,15509,15276,15517,15589,15727,15956,15953,15952,15954,15936,16011,16061,16060,16064,16065,16062,16063,16028,15931,15932,15928,15989,15990)
-  var filterthree = "&filter=encounterID%21%3D0%20AND%20ability.name%20in%20%28%22Shadow%20Bolt%22%2C%22Mind%20Blast%22%2C%22Death%20Coil%22%2C%22Shadowburn%22%29%20AND%20target.id%20in%20%2812118%2C11982%2C12259%2C12057%2C12056%2C12264%2C12098%2C11988%2C11502%2C10184%2C12435%2C13020%2C12017%2C11983%2C14601%2C11981%2C14020%2C11583%2C14507%2C14517%2C14510%2C11382%2C15082%2C14509%2C15114%2C14515%2C11380%2C14834%2C15348%2C15341%2C15340%2C15370%2C15369%2C15339%2C15263%2C15543%2C15511%2C15544%2C15516%2C15510%2C15299%2C15509%2C15276%2C15517%2C15589%2C15727%2C15956%2C15953%2C15952%2C15954%2C15936%2C16011%2C16061%2C16060%2C16064%2C16065%2C16062%2C16063%2C16028%2C15931%2C15932%2C15928%2C15989%2C15990%29";
+  var filterthree = "&filter=encounterID%21%3D0%20AND%20ability.name%20in%20%28%22Shadow%20Bolt%22%2C%22Shoot%22%2C%22Mind%20Blast%22%2C%22Death%20Coil%22%2C%22Shadowburn%22%2C%22Fireball%22%2C%22Ignite%22%2C%22Scorch%22%2C%22Instant%20Poison%22%2C%22Fire%20Blast%22%2C%22Arcane%20Shot%22%2C%22Thunderfury%22%2C%22Blast%20Wave%22%2C%22Exorcism%22%2C%22Arcane%20Explosion%22%2C%22Flamestrike%22%2C%22Judgement%20of%20Command%22%2C%22Goblin%20Sapper%20Charge%22%2C%22Mind%20Blast%22%2C%22Searing%20Pain%22%2C%22Curse%20of%20Doom%22%2C%22Smite%22%2C%22Corruption%22%2C%22Hammer%20of%20Wrath%22%2C%22Pyroblast%22%2C%22Consecration%22%2C%22Frostbolt%22%2C%22Immolate%22%2C%22Soul%20Fire%22%2C%22Flamestrike%22%2C%22Stratholme%20Holy%20Water%22%2C%22Cone%20of%20Cold%22%2C%22Moonfire%22%2C%22Holy%20Fire%22%2C%22Holy%20Wrath%22%2C%22Arcane%20Shot%22%2C%22Holy%20Shock%22%2C%22Curse%20of%20Agony%22%2C%22Rain%20of%20Fire%22%2C%22Drain%20Soul%22%2C%22Frost%20Nova%22%29%20AND%20target.id%20in%20%2812118%2C11982%2C12259%2C12057%2C12056%2C12264%2C12098%2C11988%2C11502%2C10184%2C12435%2C13020%2C12017%2C11983%2C14601%2C11981%2C14020%2C11583%2C14507%2C14517%2C14510%2C11382%2C15082%2C14509%2C15114%2C14515%2C11380%2C14834%2C15348%2C15341%2C15340%2C15370%2C15369%2C15339%2C15263%2C15543%2C15511%2C15544%2C15516%2C15510%2C15299%2C15509%2C15276%2C15517%2C15589%2C15727%2C15956%2C15953%2C15952%2C15954%2C15936%2C16011%2C16061%2C16060%2C16064%2C16065%2C16062%2C16063%2C16028%2C15931%2C15932%2C15928%2C15989%2C15990%29";
   try {
     var fightData = new XMLHttpRequest();
     fightData.open("Get", baseURL + "/fights/" + logID + "?" + API.slice(1,API.length), false);
@@ -31,14 +31,14 @@ function checkISB() {
     fightData = JSON.parse(fightData.response);
     
     var debuffData = new XMLHttpRequest();
-    debuffData.open("Get", baseURL + "/events/debuffs/" + logID + "?start=0&end=1000000000&hostility=1&abilityid=17800&wipes=2" + filter + API, false);
+    debuffData.open("Get", baseURL + "/events/debuffs/" + logID + "?start=0&end=1000000000&hostility=1&abilityid=28772&wipes=2" + filter + API, false);
     debuffData.send(null);
     debuffData = JSON.parse(debuffData.response);
   
     var nextTime = debuffData.nextPageTimestamp;
     while (nextTime>1) {
       var dataadd = new XMLHttpRequest();
-      dataadd.open("Get", baseURL + "/events/debuffs/" + logID + "?start=" + nextTime + "&end=1000000000&hostility=1&abilityid=17800&wipes=2" + filter + API, false);
+      dataadd.open("Get", baseURL + "/events/debuffs/" + logID + "?start=" + nextTime + "&end=1000000000&hostility=1&abilityid=28772&wipes=2" + filter + API, false);
       dataadd.send(null);
       dataadd = JSON.parse(dataadd.response);
       debuffData.events = debuffData.events.concat(dataadd.events);
@@ -207,7 +207,7 @@ function checkISB() {
     
     if (debuffEdit[i].type == "applydebuff" || debuffEdit[i].type == "applydebuffstack") {
       who = fightData.friendlies[friendIDs.indexOf(debuffEdit[i].sourceID)];
-      output += (timeAt + "<td style=text-align:right>Shadow Vulnerability" + ab + "<td style=text-align:left;color:#9482C9>" + who.name + tdtr)
+      output += (timeAt + "<td style=text-align:right>Elemental Vulnerability" + ab + "<td style=text-align:left;color:#69CCF0>" + who.name + tdtr)
       var appliedAt = debuffEdit[i].timestamp;
     }
     else {
@@ -240,7 +240,7 @@ function checkISB() {
           else if (who.type == "Shaman")
             var colorName = ";color:#0070DE";
           
-          output += (timeAt + "<td style=text-align:right>ISB Stack (" + (debuffEdit[i].stack+1) + ")" + rb + "<td style=text-align:left" + colorName + ">" + who.name + "'s " + remover.ability.name + tdtr)
+          output += (timeAt + "<td style=text-align:right>Elemental Vulnerability (" + (debuffEdit[i].stack+1) + ")" + rb + "<td style=text-align:left" + colorName + ">" + who.name + "'s " + remover.ability.name + tdtr)
           timestampList[timestampList.indexOf(findClosest(debuffEdit[i].timestamp,timestampList))] = -1;
         }
         catch(err) {
